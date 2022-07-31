@@ -1,5 +1,5 @@
 ## Description of project
-This application is an energy related quiz game which is commissioned by the [OOPP team](https://cse1105.pages.ewi.tudelft.nl/2021-2022/course-website/) from TU Delft. The back-end is written in `Java`, while the front-end uses `FXML`.
+This application is an energy related quiz game which is commissioned by the [OOPP team] from TU Delft. The back-end is written in `Java`, while the front-end uses `FXML`.
 The quiz has 6 different question types; All of them are unique, and you can earn points for answering them correctly. The app also has a build-in message system to send
 emotes, and there are 3 different joker types which can be used during the game. In the single player mode your name can end up on the leaderboard if your score is high enough, 
 and the multiplayer game can be joined with as many people as you want. Feel free to contribute to the code and add new features to the project!
@@ -53,17 +53,6 @@ If you already have an activity bank created which you would like to add to the 
 
 Now you can run the application and the questions will be generated from the activity bank.
 
-
-## Group members
-
-| Profile Picture | Name | Email |
-|---|---|---|
-| ![](https://eu.ui-avatars.com/api/?name=VVG&length=4&size=50&color=DDD&background=777&font-size=0.325) | Vlad Gabriel Vranceanu | V.G.Vranceanu@student.tudelft.nl |
-| ![](https://eu.ui-avatars.com/api/?name=AOG&length=4&size=50&color=DDD&background=777&font-size=0.325) | Axel Otto Geist | A.O.Geist@student.tudelft.nl |
-| ![](https://eu.ui-avatars.com/api/?name=TM&length=4&size=50&color=DDD&background=777&font-size=0.325) | Tijmen Meijer | T.G.Meijer@student.tudelft.nl |
-| ![](https://eu.ui-avatars.com/api/?name=WB&length=4&size=50&color=DDD&background=777&font-size=0.325) | Wout Burgers | W.Burgers@student.tudelft.nl |
-| ![](https://eu.ui-avatars.com/api/?name=TG&length=4&size=50&color=DDD&background=777&font-size=0.325) | Thijs Groenewegen | T.M.A.Groenewegen@student.tudelft.nl |
-| ![](https://eu.ui-avatars.com/api/?name=PF&length=4&size=50&color=DDD&background=777&font-size=0.325) | Pablo Fournier | P.Fournier@student.tudelft.nl |
 
 <!-- Instructions (remove once assignment has been completed -->
 <!-- - Add (only!) your own name to the table above (use Markdown formatting) -->
