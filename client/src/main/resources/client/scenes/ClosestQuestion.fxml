@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1200.0" style="-fx-background-color: #6ebbd5;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.ClosestQuestionCtrl">
+    <ImageView fitHeight="720.0" fitWidth="1200.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="client/images/background.png" />
+    </ImageView>
+    <Label layoutX="290.0" layoutY="6" prefHeight="165.0" prefWidth="700.0" text="Which is the closest to the given activity?" textAlignment="CENTER" textFill="#0000004d" wrapText="true">
+        <font>
+            <Font name="Showcard Gothic" size="42.0" />
+        </font>
+    </Label>
+    <Label layoutX="290.0" prefHeight="165.0" prefWidth="700.0" text="Which is the closest to the given activity?" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+        <font>
+            <Font name="Showcard Gothic" size="42.0" />
+        </font>
+    </Label>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004a61" height="467.0" layoutX="350.0" layoutY="159.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="760.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004a61" height="76.0" layoutX="65.0" layoutY="264.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="226.0" />
+
+    <Pane fx:id="RectanglesMP" prefHeight="720.0" prefWidth="1200.0">
+        <Rectangle fx:id="object4MP" arcHeight="5.0" arcWidth="5.0" fill="#004a61" height="32.0" layoutX="243.0" layoutY="476.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="160.0" />
+        <Rectangle fx:id="object5MP" arcHeight="5.0" arcWidth="5.0" fill="#0091be" height="22.0" layoutX="258.0" layoutY="474.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" translateZ="1.0" width="129.0" />
+        <Rectangle fx:id="object2MP" arcHeight="5.0" arcWidth="5.0" fill="#004a61" height="95.0" layoutX="63.0" layoutY="530.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="226.0" />
+        <Rectangle fx:id="object7MP" arcHeight="5.0" arcWidth="5.0" fill="#0091be" height="146.0" layoutX="167.0" layoutY="316.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="21.0" />
+        <Rectangle fx:id="object1MP" arcHeight="5.0" arcWidth="5.0" fill="#0091be" height="228.0" layoutX="63.0" layoutY="381.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="226.0" />
+    </Pane>
+
+    <Pane fx:id="RectanglesSP" prefHeight="720.0" prefWidth="1200.0">
+        <Rectangle fx:id="object3SP" arcHeight="5.0" arcWidth="5.0" fill="#004a61" height="32.0" layoutX="255.0" layoutY="259.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="160.0" />
+        <Rectangle fx:id="object2SP" arcHeight="5.0" arcWidth="5.0" fill="#0091be" height="22.0" layoutX="270.0" layoutY="258.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="129.0" />
+    </Pane>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0091be" height="446.0" layoutX="350.0" layoutY="159.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="760.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0091be" height="112.0" layoutX="65.0" layoutY="216.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="226.0" />
+
+    <Pane fx:id="RectanglesTopSP" prefHeight="720.0" prefWidth="1200.0">
+        <Rectangle fx:id="object1SP" arcHeight="5.0" arcWidth="5.0" fill="#0091be" height="15.0" layoutX="270.0" layoutY="262.0" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="105.0" />
+    </Pane>
+
+    <Pane fx:id="RectanglesTopMP" prefHeight="720.0" prefWidth="1200.0">
+        <Rectangle fx:id="object6MP" arcHeight="5.0" arcWidth="5.0" fill="#0091be" height="127.0" layoutX="171.0" layoutY="303.0" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="13.0" />
+        <Rectangle fx:id="object3MP" arcHeight="5.0" arcWidth="5.0" fill="#0091be" height="15.0" layoutX="270.0" layoutY="477.0" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="105.0" />
+        <Label fx:id="textJoker" alignment="CENTER" layoutX="87.0" layoutY="408.0" prefHeight="32.0" prefWidth="183.0" text="Jokers left:" textFill="WHITE">
+            <font>
+                <Font name="Showcard Gothic" size="23" />
+            </font>
+        </Label>
+        <Label fx:id="textEmoji" alignment="CENTER" layoutX="87.0" layoutY="496.0" prefHeight="32.0" prefWidth="183.0" text="Emojis:" textFill="WHITE">
+            <font>
+                <Font name="Showcard Gothic" size="23" />
+            </font>
+        </Label>
+    </Pane>
+   <Label fx:id="activity3_back" layoutX="383.0" layoutY="160.0" prefHeight="156.0" prefWidth="694.0" text="given activity" textAlignment="CENTER" textFill="#0000004d" wrapText="true">
+      <font>
+         <Font name="Showcard Gothic" size="35.0" />
+      </font>
+   </Label>
+   <Label fx:id="activity3_front" layoutX="383.0" layoutY="156.0" prefHeight="156.0" prefWidth="694.0" text="given activity" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+      <font>
+         <Font name="Showcard Gothic" size="35.0" />
+      </font>
+   </Label>
+
+    <Label fx:id="activity2_front" alignment="CENTER" layoutX="776.0" layoutY="450.0" prefHeight="90.0" prefWidth="328.0" text="to boil 1l of water" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+        <font>
+            <Font name="Showcard Gothic" size="20.0" />
+        </font>
+    </Label>
+
+    <Label fx:id="activity1_front" alignment="CENTER" layoutX="360.0" layoutY="450.0" prefHeight="90.0" prefWidth="328.0" text="5 minutes shower" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+        <font>
+            <Font name="Showcard Gothic" size="20.0" />
+        </font>
+    </Label>
+    <Group layoutX="86.0" layoutY="232.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+        <Label fx:id="scoreShadow" layoutY="4.0" prefHeight="32.0" prefWidth="190.0" text="Score:" textFill="#0000004d">
+            <font>
+                <Font name="Showcard Gothic" size="23" />
+            </font>
+        </Label>
+        <Label fx:id="scoreText" prefHeight="32.0" prefWidth="193.0" text="Score:" textFill="WHITE">
+            <font>
+                <Font name="Showcard Gothic" size="23" />
+            </font>
+        </Label>
+    </Group>
+    <Label layoutX="86.0" layoutY="280.0" prefHeight="32.0" prefWidth="129.0" text="Question:" textFill="#0000004d">
+        <font>
+            <Font name="Showcard Gothic" size="23" />
+        </font>
+    </Label>
+    <Label layoutX="86.0" layoutY="276.0" prefHeight="32.0" prefWidth="129.0" text="Question:" textFill="WHITE">
+        <font>
+            <Font name="Showcard Gothic" size="23" />
+        </font>
+    </Label>
+    <ImageView fx:id="leftImage" fitHeight="130.0" fitWidth="130.0" layoutX="465.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="client/images/placeholder.png" />
+    </ImageView>
+    <ImageView fx:id="rightImage" fitHeight="130.0" fitWidth="130.0" layoutX="865.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="client/images/placeholder.png" />
+    </ImageView>
+    <Label layoutX="673.0" layoutY="333.0" prefHeight="112.0" prefWidth="129.0" text="VS" textFill="#0000004d">
+        <font>
+            <Font name="Showcard Gothic" size="96.0" />
+        </font>
+    </Label>
+    <Label layoutX="673.0" layoutY="328.0" prefHeight="112.0" prefWidth="129.0" text="VS" textFill="YELLOW">
+        <font>
+            <Font name="Showcard Gothic" size="96.0" />
+        </font>
+    </Label>
+    <Pane fx:id="InteractMP" prefHeight="720.0" prefWidth="1200.0">
+        <ImageView fx:id="muscleEmoji" fitHeight="45.0" fitWidth="45.0" layoutX="72.0" layoutY="540.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="client/images/emotes/muscle.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="poopEmoji" fitHeight="45.0" fitWidth="45.0" layoutX="124.0" layoutY="540.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="client/images/emotes/poop.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="winkEmoji" fitHeight="45.0" fitWidth="45.0" layoutX="176.0" layoutY="540.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="client/images/emotes/wink.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="cryEmoji" fitHeight="45.0" fitWidth="45.0" layoutX="228.0" layoutY="540.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="client/images/emotes/cry.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="muscle" layoutX="70.0" layoutY="541.0" mnemonicParsing="false" opacity="0.0" prefHeight="45.0" prefWidth="45.0" text="Button">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="poop" layoutX="122.0" layoutY="541.0" mnemonicParsing="false" opacity="0.0" prefHeight="45.0" prefWidth="45.0" text="Button">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="wink" layoutX="174.0" layoutY="541.0" mnemonicParsing="false" opacity="0.0" prefHeight="45.0" prefWidth="45.0" text="Button">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Button fx:id="cry" layoutX="226.0" layoutY="541.0" mnemonicParsing="false" opacity="0.0" prefHeight="45.0" prefWidth="45.0" text="Button">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+      <ImageView fx:id="removeAnswerImage" fitHeight="48.0" fitWidth="48.0" layoutX="227.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="client/images/jokers/eraser.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="removeAnswerButton" layoutX="227.0" layoutY="445.0" mnemonicParsing="false" onAction="#removeAnswer" opacity="0.0" prefHeight="36.0" prefWidth="45.0" style="-fx-background-color: #00000000;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+    </Pane>
+    <Group fx:id="emote" layoutX="-2.0" layoutY="28.0" visible="false">
+        <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0091be" height="74.0" layoutX="-4.0" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" strokeWidth="3.0" width="287.0" />
+            <ImageView fx:id="emoteImage" fitHeight="58.0" fitWidth="48.0" layoutX="8.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="client/images/emotes/muscle.png" />
+                </image>
+            </ImageView>
+            <TextField fx:id="emoteSender" alignment="CENTER" editable="false" layoutX="40.0" layoutY="15.0" prefHeight="45.0" prefWidth="264.0" style="-fx-background-color: transparent;" text="aaaaaaaaaaaaaaa">
+                <font>
+                    <Font name="Showcard Gothic" size="23.0" />
+                </font>
+            </TextField>
+        </children>
+    </Group>
+    <Button layoutX="1110.0" mnemonicParsing="false" onAction="#cancel" prefHeight="87.0" prefWidth="94.0" style="-fx-background-color: #00000000;" textFill="#00000049">
+        <font>
+            <Font name="Showcard Gothic" size="14.0" />
+        </font>
+        <graphic>
+            <Label prefHeight="79.0" prefWidth="87.0" text="🏠" textFill="#0000004d">
+                <font>
+                    <Font name="Showcard Gothic" size="74.0" />
+                </font>
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+
+                </cursor>
+            </Label>
+        </graphic>
+    </Button>
+    <Text fx:id="crossMark1" fill="RED" layoutX="360.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" visible="false">
+        <font>
+            <Font name="System Bold" size="70.0" />
+        </font>
+    </Text>
+    <Text fx:id="crossMark2" fill="RED" layoutX="1060.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="X" visible="false">
+        <font>
+            <Font name="System Bold" size="70.0" />
+        </font>
+    </Text>
+    <Text fx:id="checkMark1" fill="#00ff26" layoutX="350.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="✓" visible="false">
+        <font>
+            <Font name="System Bold" size="70.0" />
+        </font>
+    </Text>
+    <Text fx:id="checkMark2" fill="#00ff26" layoutX="1045.0" layoutY="430.0" strokeType="OUTSIDE" strokeWidth="0.0" text="✓" visible="false">
+        <font>
+            <Font name="System Bold" size="70.0" />
+        </font>
+    </Text>
+    <Label fx:id="questionLap" layoutX="214.0" layoutY="274.0" prefHeight="43.0" prefWidth="70.0" text="0/20" textFill="#0000004d">
+        <font>
+            <Font name="Showcard Gothic" size="23.0" />
+        </font>
+    </Label>
+    <Label fx:id="questionLapShadow" layoutX="214.0" layoutY="270.0" prefHeight="43.0" prefWidth="70.0" text="0/20" textFill="WHITE">
+        <font>
+            <Font name="Showcard Gothic" size="23.0" />
+        </font>
+    </Label>
+    <Button fx:id="leftAnswer" layoutX="361.0" layoutY="309.0" mnemonicParsing="false" onAction="#answerLeft" opacity="0.0" prefHeight="238.0" prefWidth="297.0" text="Button">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor></Button>
+    <Button fx:id="rightAnswer" layoutX="794.0" layoutY="310.0" mnemonicParsing="false" onAction="#answerRight" opacity="0.0" prefHeight="238.0" prefWidth="308.0" text="Button">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor></Button>
+    <ImageView fx:id="doublePointsImage" fitHeight="48.0" fitWidth="48.0" layoutX="72.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="client/images/jokers/double-point.png" />
+        </image>
+    </ImageView>
+    <Button fx:id="doublePointsButton" layoutX="72.0" layoutY="449.0" mnemonicParsing="false" onAction="#doublePoints" opacity="0.0" prefHeight="36.0" prefWidth="45.0" style="-fx-background-color: #00000000;">
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+    <ImageView fx:id="timerImage" fitHeight="48.0" fitWidth="48.0" layoutX="148.0" layoutY="445.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="client/images/jokers/timer.png" />
+        </image>
+    </ImageView>
+    <Button fx:id="timerButton" layoutX="148.0" layoutY="450.0" mnemonicParsing="false" onAction="#decreaseTime" opacity="0.0" prefHeight="36.0" prefWidth="45.0" style="-fx-background-color: #00000000;">
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004a61" height="36.0" layoutX="532.0" layoutY="551.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="394.0" />
+    <ProgressBar fx:id="myProgressBar" disable="true" layoutX="538.0" layoutY="555.0" opacity="1" prefHeight="28.0" prefWidth="382.0" progress="0.0" />
+    <ImageView fx:id="ClockImage" fitHeight="57.0" fitWidth="66.0" layoutX="510.0" layoutY="538.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="client/images/clock.png" />
+        </image>
+    </ImageView>
+</AnchorPane>

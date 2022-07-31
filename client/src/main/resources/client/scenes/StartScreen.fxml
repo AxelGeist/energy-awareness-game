@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1200.0" style="-fx-background-color: #6ebbd5;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.StartScreenCtrl">
+    <ImageView fitHeight="720.0" fitWidth="1200.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="client/images/background.png" />
+    </ImageView>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004a61" height="26.0" layoutX="409.0" layoutY="357.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="377.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0091be" height="95.0" layoutX="409.0" layoutY="275.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="377.0" />
+    <Button layoutX="410.0" layoutY="282.0" mnemonicParsing="false" prefHeight="88.0" prefWidth="377.0" style="-fx-background-color: #00000000;" text="SINGLEPLAYER" textFill="#0000004d">
+        <font>
+            <Font name="Showcard Gothic" size="45.0" />
+        </font>
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+    <Button id="singleplayerButton" layoutX="408.0" layoutY="275.0" mnemonicParsing="false" onAction="#singleplayer" prefHeight="88.0" prefWidth="377.0" style="-fx-background-color: #00000000;" text="SINGLEPLAYER" textFill="WHITE">
+        <font>
+            <Font name="Showcard Gothic" size="45.0" />
+        </font>
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004a61" height="26.0" layoutX="411.0" layoutY="477.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="377.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0091be" height="95.0" layoutX="411.0" layoutY="395.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="377.0" />
+    <Button layoutX="412.0" layoutY="402.0" mnemonicParsing="false" onAction="#multiplayerEnterName" prefHeight="88.0" prefWidth="377.0" style="-fx-background-color: #00000000;" text="Multiplayer" textFill="#0000004d">
+        <font>
+            <Font name="Showcard Gothic" size="45.0" />
+        </font>
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+    <Button id="multiplayerButton" layoutX="411.0" layoutY="396.0" mnemonicParsing="false" onAction="#multiplayerEnterName" prefHeight="88.0" prefWidth="377.0" style="-fx-background-color: #00000000;" text="Multiplayer" textFill="WHITE">
+        <font>
+            <Font name="Showcard Gothic" size="45.0" />
+        </font>
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+    <Label layoutX="394.0" layoutY="68.0" text="QUIZZZZ" textFill="#0000004d">
+        <font>
+            <Font name="Showcard Gothic" size="96.0" />
+        </font>
+    </Label>
+    <Label layoutX="394.0" layoutY="59.0" text="QUIZZZZ" textFill="WHITE">
+        <font>
+            <Font name="Showcard Gothic" size="96.0" />
+        </font>
+    </Label>
+   <Text fill="#0000004d" layoutX="39.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="?" wrappingWidth="28.13671875">
+      <font>
+         <Font name="Showcard Gothic" size="100.0" />
+      </font>
+   </Text>
+   <Button layoutX="-31.0" layoutY="-21.0" mnemonicParsing="false" onAction="#Help" prefHeight="88.0" prefWidth="62.0" style="-fx-background-color: #00000000;" text="?" textFill="WHITE">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+      <font>
+         <Font name="Showcard Gothic" size="100.0" />
+      </font>
+   </Button>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004a61" height="32.0" layoutX="530.0" layoutY="557.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="138.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0091be" height="58.0" layoutX="530.0" layoutY="517.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="138.0" />
+    <Button layoutX="413.0" layoutY="505.0" mnemonicParsing="false" onAction="#showAdmin" prefHeight="88.0" prefWidth="377.0" style="-fx-background-color: #00000000;" text="Admin" textFill="#0000004d">
+        <font>
+            <Font name="Showcard Gothic" size="30.0" />
+        </font>
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+    <Button id="multiplayerButton" layoutX="412.0" layoutY="499.0" mnemonicParsing="false" onAction="#showAdmin" prefHeight="88.0" prefWidth="377.0" style="-fx-background-color: #00000000;" text="Admin" textFill="WHITE">
+        <font>
+            <Font name="Showcard Gothic" size="30.0" />
+        </font>
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+</AnchorPane>

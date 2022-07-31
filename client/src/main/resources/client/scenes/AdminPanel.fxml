@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1200.0" style="-fx-background-color: #6ebbd5;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.AdminCtrl">
+    <ImageView fitHeight="720.0" fitWidth="1200.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="client/images/background.png" />
+    </ImageView>
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004a61" height="26.0" layoutX="823.0" layoutY="293.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="142.0" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0091be" height="53.0" layoutX="823.0" layoutY="259.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="3.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="142.0" />
+    <Button id="Add" graphicTextGap="3.0" layoutX="836.0" layoutY="253.0" mnemonicParsing="false" onAction="#addActivity" prefHeight="66.0" prefWidth="116.0" style="-fx-background-color: #00000000;" text="Add!" textFill="WHITE">
+        <font>
+            <Font name="Showcard Gothic" size="25.0" />
+        </font>
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+    <Label layoutX="289.0" layoutY="68.0" prefHeight="112.0" prefWidth="717.0" text="Admin panel" textFill="#0000004d">
+        <font>
+            <Font name="Showcard Gothic" size="96.0" />
+        </font>
+    </Label>
+    <Label layoutX="289.0" layoutY="59.0" prefHeight="112.0" prefWidth="717.0" text="Admin panel" textFill="WHITE">
+        <font>
+            <Font name="Showcard Gothic" size="96.0" />
+        </font>
+    </Label>
+    <TextField fx:id="name" alignment="CENTER" layoutX="206.0" layoutY="259.0" prefHeight="60.0" prefWidth="365.0" promptText="title" style="-fx-background-color: #0091be; -fx-border-color: black; -fx-border-radius: 10; -fx-border-width: 3; -fx-background-radius: 10; -fx-text-inner-color: #FFFFFF; -fx-promt-text-fill: #FFFFFF;">
+        <font>
+            <Font name="Showcard Gothic" size="25.0" />
+        </font>
+    </TextField>
+    <TextField fx:id="consumption" alignment="CENTER" layoutX="582.0" layoutY="259.0" prefHeight="60.0" prefWidth="230.0" promptText="consumption" style="-fx-background-color: #0091be; -fx-border-color: black; -fx-border-radius: 10; -fx-border-width: 3; -fx-background-radius: 10; -fx-text-inner-color: #FFFFFF; -fx-promt-text-fill: #FFFFFF;">
+        <font>
+            <Font name="Showcard Gothic" size="25.0" />
+        </font>
+    </TextField>
+    <Label layoutX="208.0" layoutY="208.0" prefHeight="53.0" prefWidth="730.0" text="Add a new activity:" textFill="#00000044">
+        <font>
+            <Font name="Showcard Gothic" size="30.0" />
+        </font>
+    </Label>
+    <Label layoutX="208.0" layoutY="203.0" prefHeight="53.0" prefWidth="730.0" text="Add a new activity:" textFill="WHITE">
+        <font>
+            <Font name="Showcard Gothic" size="30.0" />
+        </font>
+    </Label>
+    <Label fx:id="added" layoutX="758.0" layoutY="203.0" prefHeight="53.0" prefWidth="274.0" text="Activity added!" textFill="#adff87" visible="false">
+        <font>
+            <Font name="Showcard Gothic" size="30.0" />
+        </font>
+    </Label>
+    <Label layoutX="206.0" layoutY="346.0" prefHeight="53.0" prefWidth="730.0" text="Edit a question:" textFill="#00000044">
+        <font>
+            <Font name="Showcard Gothic" size="30.0" />
+        </font>
+    </Label>
+    <Label layoutX="206.0" layoutY="341.0" prefHeight="53.0" prefWidth="730.0" text="Edit a question:" textFill="WHITE">
+        <font>
+            <Font name="Showcard Gothic" size="30.0" />
+        </font>
+    </Label>
+   <ComboBox editable="true" layoutX="206.0" layoutY="394.0" prefHeight="34.0" prefWidth="160.0" promptText="Open question" style="-fx-background-color: #0091be;" visibleRowCount="5">
+       <items>
+           <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Open Question" />
+               <String fx:value="Instead Question" />
+               <String fx:value="Multiple Choice Question" />
+               <String fx:value="Comparison Question" />
+               <String fx:value="Guess Question" />
+               <String fx:value="Closest Question" />
+           </FXCollections>
+       </items>
+   </ComboBox>
+    <Button layoutX="1110.0" mnemonicParsing="false" onAction="#cancel" prefHeight="87.0" prefWidth="94.0" style="-fx-background-color: #00000000;" textFill="#00000049">
+        <font>
+            <Font name="Showcard Gothic" size="14.0" />
+        </font>
+        <graphic>
+            <Label prefHeight="79.0" prefWidth="87.0" text="🏠" textFill="#0000004d">
+                <font>
+                    <Font name="Showcard Gothic" size="74.0" />
+                </font>
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+
+                </cursor>
+            </Label>
+        </graphic>
+    </Button>
+</AnchorPane>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1200.0" style="-fx-background-color: #6ebbd5;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.SingleplayerEnterNameCtrl">
+    <children>
+        <ImageView fitHeight="720.0" fitWidth="1200.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="client/images/background.png" />
+            </image>
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004a61" height="29.0" layoutX="58.0" layoutY="430.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="471.0" />
+        <TextField fx:id="username" alignment="CENTER" layoutX="58.0" layoutY="319.0" prefHeight="128.0" prefWidth="471.0" promptText="Enter name" style="-fx-background-color: #0091be; -fx-border-color: black; -fx-border-radius: 10; -fx-border-width: 4; -fx-background-radius: 10; -fx-text-inner-color: #FFFFFF; -fx-promt-text-fill: #FFFFFF;">
+            <font>
+                <Font name="Showcard Gothic" size="64.0" />
+            </font>
+            <effect>
+                <InnerShadow />
+            </effect></TextField>
+        <Label layoutX="394.0" layoutY="68.0" text="QUIZZZZ" textFill="#0000004d">
+            <font>
+                <Font name="Showcard Gothic" size="96.0" />
+            </font></Label>
+        <Label layoutX="394.0" layoutY="59.0" text="QUIZZZZ" textFill="WHITE">
+            <font>
+                <Font name="Showcard Gothic" size="96.0" />
+            </font></Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004a61" height="49.0" layoutX="579.0" layoutY="580.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="497.0" />
+      <TextField fx:id="title" alignment="TOP_CENTER" layoutX="579.0" layoutY="198.0" prefHeight="416.0" prefWidth="497.0" promptText="Enter name" style="-fx-background-color: #0091be; -fx-border-color: black; -fx-border-radius: 10; -fx-border-width: 4; -fx-background-radius: 10; -fx-text-inner-color: #FFFFFF; -fx-promt-text-fill: #FFFFFF;" text="Leaderboard">
+         <font>
+            <Font name="Showcard Gothic" size="52.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004a61" height="26.0" layoutX="211.0" layoutY="554.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="167.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0091be" height="64.0" layoutX="211.0" layoutY="503.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="167.0" />
+      <Button layoutX="202.0" layoutY="491.0" mnemonicParsing="false" onAction="#ok" style="-fx-background-color: #00000000;" text="Next" textFill="WHITE">
+         <font>
+            <Font name="Showcard Gothic" size="47.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+        <Button layoutX="1110.0" mnemonicParsing="false" onAction="#cancel" prefHeight="87.0" prefWidth="94.0" style="-fx-background-color: #00000000;" textFill="#00000049">
+            <font>
+                <Font name="Showcard Gothic" size="14.0" />
+            </font>
+            <graphic>
+                <Label prefHeight="79.0" prefWidth="87.0" text="🏠" textFill="#0000004d">
+                    <font>
+                        <Font name="Showcard Gothic" size="74.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Label>
+            </graphic>
+        </Button>
+    </children>
+    <TableView fx:id="table" layoutX="590.0" layoutY="282.0" prefHeight="322.0" prefWidth="471.0" style="-fx-background-color: transparent; -fx-background-radius: 0; -fx-size: 0; -fx-background-insets: 0; -fx-padding: 0; -fx-background-position: 10;" styleClass="tableClass">
+        <columns>
+            <TableColumn id="nameID" fx:id="colRank" prefWidth="122.4000244140625" sortable="false" style="-fx-background-color: #0091be; -fx-border-collapse: collapse; -fx-color: #0091be; -fx-text-fill: white; -fx-font: 30px &quot;Showcard Gothic&quot;; -fx-alignment: CENTER;" styleClass="nameColumn" text="" />
+            <TableColumn id="nameID" fx:id="colPerson" prefWidth="181.5999755859375" sortable="false" style="-fx-background-color: #0091be; -fx-border-collapse: collapse; -fx-color: #0091be; -fx-text-fill: white; -fx-font: 30px &quot;Showcard Gothic&quot;; -fx-alignment: CENTER;" styleClass="nameColumn" text="" />
+            <TableColumn fx:id="colScore" prefWidth="169.60003662109375" sortable="false" style="-fx-background-color: #0091be; -fx-border-collapse: collapse; -fx-color: #0091be; -fx-text-fill: white; -fx-font: 30px &quot;Showcard Gothic&quot;; -fx-alignment: CENTER;" styleClass="scoreColumn" text="" />
+        </columns>
+        <opaqueInsets>
+            <Insets />
+        </opaqueInsets>
+
+    </TableView>
+</AnchorPane>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1200.0" style="-fx-background-color: #6ebbd5;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.AddPersonCtrl">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1200.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="client/images/background.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004a61" height="41.0" layoutX="336.0" layoutY="346.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="516.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004a61" height="41.0" layoutX="244.0" layoutY="463.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="700.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004a61" height="26.0" layoutX="517.0" layoutY="606.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="167.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0091be" height="64.0" layoutX="517.0" layoutY="555.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="167.0" />
+      <Button layoutX="508.0" layoutY="543.0" mnemonicParsing="false" onAction="#ok" style="-fx-background-color: #00000000;" text="Next" textFill="WHITE">
+         <font>
+            <Font name="Showcard Gothic" size="47.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <TextField fx:id="username" alignment="CENTER" layoutX="336.0" layoutY="240.0" prefHeight="134.0" prefWidth="516.0" promptText="Enter name" style="-fx-background-color: #0091be; -fx-border-color: black; -fx-border-radius: 10; -fx-border-width: 4; -fx-background-radius: 10; -fx-text-inner-color: #FFFFFF; -fx-promt-text-fill: #FFFFFF;">
+         <font>
+            <Font name="Showcard Gothic" size="45.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect></TextField>
+      <TextField fx:id="servername" alignment="CENTER" layoutX="244.0" layoutY="403.0" prefHeight="80.0" prefWidth="700.0" promptText="Enter server" style="-fx-background-color: #0091be; -fx-border-color: black; -fx-border-radius: 10; -fx-border-width: 4; -fx-background-radius: 10; -fx-text-inner-color: #FFFFFF; -fx-promt-text-fill: #FFFFFF;">
+         <font>
+            <Font name="Showcard Gothic" size="45.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </TextField>
+      <Label layoutX="394.0" layoutY="68.0" text="QUIZZZZ" textFill="#0000004d">
+         <font>
+            <Font name="Showcard Gothic" size="96.0" />
+         </font></Label>
+      <Label layoutX="394.0" layoutY="59.0" text="QUIZZZZ" textFill="WHITE">
+         <font>
+            <Font name="Showcard Gothic" size="96.0" />
+         </font></Label>
+      <Button layoutX="1110.0" mnemonicParsing="false" onAction="#cancel" prefHeight="87.0" prefWidth="94.0" style="-fx-background-color: #00000000;" textFill="#00000049">
+         <font>
+            <Font name="Showcard Gothic" size="14.0" />
+         </font>
+         <graphic>
+            <Label prefHeight="79.0" prefWidth="87.0" text="🏠" textFill="#0000004d">
+               <font>
+                  <Font name="Showcard Gothic" size="74.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </graphic>
+      </Button>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <Text fill="#0000004d" layoutX="39.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="!" wrappingWidth="28.13671875">
+         <font>
+            <Font name="Showcard Gothic" size="100.0" />
+         </font>
+      </Text>
+      <Button layoutX="-31.0" layoutY="-21.0" mnemonicParsing="false" onAction="#help" prefHeight="88.0" prefWidth="62.0" style="-fx-background-color: #00000000;" text="!" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Showcard Gothic" size="100.0" />
+         </font>
+      </Button>
+      <Label fx:id="help" graphicTextGap="6.0" layoutX="83.0" layoutY="91.0" lineSpacing="1.0" prefHeight="120.0" prefWidth="225.0" style="-fx-background-color: #0091be; -fx-border-color: black; -fx-border-radius: 10; -fx-border-width: 4; -fx-background-radius: 10; -fx-text-inner-color: #FFFFFF; -fx-promt-text-fill: #FFFFFF;" text="'Enter server' field can be left empty, the default server will be used" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Showcard Gothic" size="16.0" />
+         </font>
+      </Label>
+
+   </children>
+</AnchorPane>

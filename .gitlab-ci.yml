@@ -1,0 +1,4 @@
+include:
+  - server/.gitlab-ci.yml
+  - commons/.gitlab-ci.yml
+  - client/.gitlab-ci.yml

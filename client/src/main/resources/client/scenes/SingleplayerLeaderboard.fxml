@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1200.0" style="-fx-background-color: #6ebbd5;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.SingleplayerLeaderboardCtrl">
+    <children>
+        <ImageView fitHeight="720.0" fitWidth="1200.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+            <Image url="client/images/background.png" />
+        </ImageView>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004a61" height="463.0" layoutX="181.0" layoutY="188.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 60; -fx-arc-width: 60;" width="838.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0091be" height="463.0" layoutX="181.0" layoutY="166.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 60; -fx-arc-width: 60;" width="838.0" />
+        <TableView fx:id="table" layoutX="300.0" layoutY="172.0" prefHeight="430.0" prefWidth="600.0" style="-fx-background-color: transparent; -fx-background-radius: 0; -fx-size: 0; -fx-background-insets: 0; -fx-padding: 0; -fx-background-position: 10;" styleClass="tableClass">
+            <columns>
+                <TableColumn id="nameID" fx:id="colRank" prefWidth="200.0" sortable="false" style="-fx-background-color: #0091be; -fx-border-collapse: collapse; -fx-color: #0091be; -fx-text-fill: white; -fx-font: 40px &quot;Showcard Gothic&quot;; -fx-alignment: CENTER;" styleClass="nameColumn" text="" />
+                <TableColumn id="nameID" fx:id="colPerson" prefWidth="200.0" sortable="false" style="-fx-background-color: #0091be; -fx-border-collapse: collapse; -fx-color: #0091be; -fx-text-fill: white; -fx-font: 40px &quot;Showcard Gothic&quot;; -fx-alignment: CENTER;" styleClass="nameColumn" text="" />
+                <TableColumn fx:id="colScore" prefWidth="200.0" sortable="false" style="-fx-background-color: #0091be; -fx-border-collapse: collapse; -fx-color: #0091be; -fx-text-fill: white; -fx-font: 40px &quot;Showcard Gothic&quot;; -fx-alignment: CENTER;" styleClass="scoreColumn" text="" />
+            </columns>
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+
+        </TableView>
+        <Label layoutX="265.0" layoutY="46.0" text="Leaderboard" textAlignment="CENTER" textFill="#0000004d">
+            <font>
+                <Font name="Showcard Gothic" size="96.0" />
+            </font>
+        </Label>
+        <Label layoutX="264.0" layoutY="39.0" text="Leaderboard" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Showcard Gothic" size="96.0" />
+            </font>
+        </Label>
+        <Button layoutX="1110.0" mnemonicParsing="false" onAction="#cancel" prefHeight="87.0" prefWidth="94.0" style="-fx-background-color: #00000000;" textFill="#00000049">
+            <font>
+                <Font name="Showcard Gothic" size="14.0" />
+            </font>
+            <graphic>
+                <Label prefHeight="79.0" prefWidth="87.0" text="🏠" textFill="#0000004d">
+                    <font>
+                        <Font name="Showcard Gothic" size="74.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Label>
+            </graphic>
+        </Button>
+    </children>
+    <Pane fx:id="group" prefHeight="720.0" prefWidth="1200.0">
+
+        <Label fx:id="noShadow" layoutX="385.0" layoutY="584" text="1" textAlignment="CENTER" textFill="#0000004d">
+            <font>
+                <Font name="Showcard Gothic" size="30" />
+            </font>
+        </Label>
+        <Label fx:id="no" layoutX="385.0" layoutY="580" text="1" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Showcard Gothic" size="30" />
+            </font>
+        </Label>
+        <Label fx:id="nameShadow" layoutX="550.0" layoutY="584" text="vlad" textAlignment="CENTER" textFill="#0000004d">
+            <font>
+                <Font name="Showcard Gothic" size="30" />
+            </font>
+        </Label>
+        <Label fx:id="name" layoutX="550.0" layoutY="580" text="vlad" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Showcard Gothic" size="30" />
+            </font>
+        </Label>
+        <Label fx:id="scoreShadow" layoutX="790.0" layoutY="584" text="0" textAlignment="CENTER" textFill="#0000004d">
+            <font>
+                <Font name="Showcard Gothic" size="30" />
+            </font>
+        </Label>
+        <Label fx:id="score" layoutX="790.0" layoutY="580" text="0" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Showcard Gothic" size="30" />
+            </font>
+        </Label>
+    </Pane>
+    <Label fx:id="place_shadow" layoutX="310.0" layoutY="584" text="You are outside the top 5" textAlignment="CENTER" textFill="#0000004d">
+        <font>
+            <Font name="Showcard Gothic" size="30" />
+        </font>
+    </Label>
+    <Label fx:id="place" layoutX="310.0" layoutY="580" text="You are outside the top 5" textAlignment="CENTER" textFill="WHITE">
+        <font>
+            <Font name="Showcard Gothic" size="30" />
+        </font>
+    </Label>
+</AnchorPane>

@@ -1,0 +1,36 @@
+.blades, .pillar, .circle {
+  -fx-opacity: 1;
+}
+
+.windenergy {
+    -fx-opacity: 1;
+}
+
+.button:hover {
+  -fx-scale-x: 1.05;
+  -fx-scale-y: 1.05;
+  -fx-scale-z: 1.05;
+}
+
+.table-view .scroll-bar * {
+    -fx-min-width: 0;
+    -fx-pref-width: 0;
+    -fx-max-width: 0;
+
+    -fx-min-height: 0;
+    -fx-pref-height: 0;
+    -fx-max-height: 0;
+}
+
+.table-view .column-header-background {
+    -fx-max-height: 0;
+    -fx-pref-height: 0;
+    -fx-min-height: 0;
+}
+
+.progress-bar {
+    -fx-accent: #6cb9d6;
+    -fx-text-box-border: #004a61;
+    -fx-control-inner-background: #004a61;
+    -fx-shadow-highlight-color: transparent;
+}

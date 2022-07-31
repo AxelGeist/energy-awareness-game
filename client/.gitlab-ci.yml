@@ -1,0 +1,28 @@
+image: gradle:7.3.3-jdk17-alpine
+
+stages:
+  - assemble
+  - checkstyle
+  - test
+
+variables:
+  # Disable the Gradle daemon to ensure isolated runs of the CI pipeline.
+  GRADLE_OPTS: "-Dorg.gradle.daemon=false"
+
+client-assemble:
+  stage: assemble
+  script:
+    gradle client:assemble
+
+client-checkstyle:
+  stage: checkstyle
+  script:
+    gradle client:checkstyleMain client:checkStyleTest
+  allow_failure: true
+
+client-test:
+  stage: test
+  script:
+    - gradle client:test client:jacocoTestReport
+    - echo `cat client/build/jacocoHtml/index.html | grep -o -E "Total[^%]+?%" | sed -E "s/<.*>//" | sed -E "s/Total/TestCoverage:/"`
+  coverage: /TestCoverage:(\d+)%/

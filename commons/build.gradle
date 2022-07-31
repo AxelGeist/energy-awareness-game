@@ -1,0 +1,6 @@
+
+
+dependencies {
+	implementation group: 'org.springframework.boot', name: 'spring-boot-starter-json', version: '2.6.4'
+	implementation group: 'jakarta.persistence', name: 'jakarta.persistence-api', version: '2.2.3'
+}

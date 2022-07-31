@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1200.0" style="-fx-background-color: #6ebbd5;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.RelaxCtrl">
+    <ImageView fitHeight="720.0" fitWidth="1200.0" layoutX="1.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="client/images/background.png" />
+    </ImageView>
+    <Label layoutX="353.0" layoutY="64.0" text="Loading..." textFill="#0000004d">
+        <font>
+            <Font name="Showcard Gothic" size="96.0" />
+        </font>
+    </Label>
+    <Label layoutX="353.0" layoutY="55.0" text="Loading..." textFill="WHITE">
+        <font>
+            <Font name="Showcard Gothic" size="96.0" />
+        </font>
+    </Label>
+    <Button layoutX="1110.0" mnemonicParsing="false" onAction="#cancel" prefHeight="87.0" prefWidth="94.0" style="-fx-background-color: #00000000;" textFill="#00000049">
+        <font>
+            <Font name="Showcard Gothic" size="14.0" />
+        </font>
+        <graphic>
+            <Label prefHeight="79.0" prefWidth="87.0" text="🏠" textFill="#0000004d">
+                <font>
+                    <Font name="Showcard Gothic" size="74.0" />
+                </font>
+                <cursor>
+                    <Cursor fx:constant="HAND" />
+                </cursor>
+            </Label>
+        </graphic>
+    </Button>
+   <ImageView id="blades" fx:id="blades" fitHeight="381.0" fitWidth="372.0" layoutX="393.0" layoutY="169.0" pickOnBounds="true" preserveRatio="true" styleClass="blades">
+      <image>
+         <Image url="client/images/blades.png" />
+      </image>
+   </ImageView>
+   <ImageView id="pillar" fx:id="pillar" fitHeight="232.0" fitWidth="83.0" layoutX="555.0" layoutY="375.0" pickOnBounds="true" preserveRatio="true" styleClass="pillar">
+      <image>
+         <Image url="client/images/pillar.png" />
+      </image>
+   </ImageView>
+   <Circle id="circle" fill="#1a798a" layoutX="579.0" layoutY="359.0" radius="24.0" stroke="#1a798a" strokeType="INSIDE" styleClass="circle" />
+    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004a61" height="48.0" layoutX="291.0" layoutY="639.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="576.0" />
+    <ProgressBar fx:id="progress" disable="true" layoutX="338.0" layoutY="644.0" opacity="1" prefHeight="37.0" prefWidth="522.0" progress="0.0" />
+    <ImageView fx:id="ClockImage" fitHeight="102.0" fitWidth="107.0" layoutX="260.0" layoutY="607.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="client/images/clock.png" />
+        </image>
+    </ImageView>
+</AnchorPane>

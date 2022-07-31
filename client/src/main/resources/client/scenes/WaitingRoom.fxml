@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1200.0" style="-fx-background-color: #6ebbd5;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.scenes.WaitingRoomCtrl">
+   <children>
+       <ImageView fitHeight="720.0" fitWidth="1200.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+           <Image url="client/images/background.png" />
+       </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004a61" height="32.0" layoutX="1134.0" layoutY="352.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="80.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0091be" height="22.0" layoutX="1136.0" layoutY="350.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="73.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004a61" height="32.0" layoutX="814.0" layoutY="353.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="160.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0091be" height="22.0" layoutX="845.0" layoutY="349.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="129.0" />
+      <Group layoutX="953.0" layoutY="315.0">
+         <children>
+             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004a61" height="64.0" layoutX="9.0" layoutY="25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="187.0" />
+             <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0091be" height="65.0" layoutX="9.0" layoutY="11.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="187.0" />
+             <Button layoutX="-5.0" layoutY="-1.0" mnemonicParsing="false" onAction="#startGameMultiplayer" prefHeight="91.0" prefWidth="216.0" style="-fx-background-color: #00000000;" text="Start" textAlignment="CENTER" textFill="WHITE">
+                 <font>
+                     <Font name="Showcard Gothic" size="47.0" />
+                 </font>
+                 <cursor>
+                     <Cursor fx:constant="HAND" />
+                 </cursor>
+            </Button>
+         </children>
+      </Group>
+       <Label layoutX="283.0" layoutY="23.0" text="Waiting room" textAlignment="CENTER" textFill="#0000004d">
+           <font>
+               <Font name="Showcard Gothic" size="96.0" />
+           </font>
+       </Label>
+       <Label layoutX="283.0" layoutY="14.0" text="Waiting room" textAlignment="CENTER" textFill="WHITE">
+           <font>
+               <Font name="Showcard Gothic" size="96.0" />
+           </font>
+       </Label>
+      <Group layoutX="56.0" layoutY="171.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004a61" height="406.0" layoutY="22.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 60; -fx-arc-width: 60;" width="838.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0091be" height="406.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="4.0" style="-fx-arc-height: 60; -fx-arc-width: 60;" width="838.0" />
+            <Text fx:id="text" fill="WHITE" layoutX="144.0" layoutY="363.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: CENTER;" text="0 Players in the waiting room..." wrappingWidth="551.0">
+               <font>
+                  <Font name="Showcard Gothic" size="25.0" />
+               </font>
+            </Text>
+         </children>
+      </Group>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0091be" height="15.0" layoutX="869.0" layoutY="353.0" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="105.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#0091be" height="15.0" layoutX="1130.0" layoutY="354.0" strokeWidth="4.0" style="-fx-arc-height: 20; -fx-arc-width: 20;" width="80.0" />
+       <TableView fx:id="table1" layoutX="75.0" layoutY="188.0" prefHeight="313.0" prefWidth="250.0" style="-fx-background-color: transparent; -fx-background-radius: 0; -fx-size: 0; -fx-background-insets: 100; -fx-padding: 0; -fx-background-position: 10; -fx-shape: null;">
+        <columns>
+            <TableColumn fx:id="colPerson1" editable="false" prefWidth="265.5" sortable="false" style="-fx-background-color: #0091be; -fx-border-collapse: collapse; -fx-color: #0091be; -fx-text-fill: white; -fx-font: 30px &quot;Showcard Gothic&quot;; -fx-alignment: CENTER;" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+       <TableView fx:id="table2" layoutX="325.0" layoutY="188.0" prefHeight="313.0" prefWidth="250.0" style="-fx-background-color: transparent; -fx-background-radius: 0; -fx-size: 0; -fx-background-insets: 100; -fx-padding: 0; -fx-background-position: 10; -fx-shape: null;">
+           <columns>
+               <TableColumn fx:id="colPerson2" editable="false" prefWidth="265.5" sortable="false" style="-fx-background-color: #0091be; -fx-border-collapse: collapse; -fx-color: #0091be; -fx-text-fill: white; -fx-font: 30px &quot;Showcard Gothic&quot;; -fx-alignment: CENTER;" />
+           </columns>
+           <columnResizePolicy>
+               <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+           </columnResizePolicy>
+       </TableView>
+       <TableView fx:id="table3" layoutX="575.0" layoutY="188.0" prefHeight="313.0" prefWidth="250.0" style="-fx-background-color: transparent; -fx-background-radius: 0; -fx-size: 0; -fx-background-insets: 100; -fx-padding: 0; -fx-background-position: 10; -fx-shape: null;">
+           <columns>
+               <TableColumn fx:id="colPerson3" editable="false" prefWidth="265.5" sortable="false" style="-fx-background-color: #0091be; -fx-border-collapse: collapse; -fx-color: #0091be; -fx-text-fill: white; -fx-font: 30px &quot;Showcard Gothic&quot;; -fx-alignment: CENTER;" />
+           </columns>
+           <columnResizePolicy>
+               <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+           </columnResizePolicy>
+       </TableView>
+       <Button layoutX="1110.0" mnemonicParsing="false" onAction="#cancel" prefHeight="87.0" prefWidth="94.0" style="-fx-background-color: #00000000;" textFill="#00000049">
+           <font>
+               <Font name="Showcard Gothic" size="14.0" />
+           </font>
+           <graphic>
+               <Label prefHeight="79.0" prefWidth="87.0" text="🏠" textFill="#0000004d">
+                   <font>
+                       <Font name="Showcard Gothic" size="74.0" />
+                   </font>
+                   <cursor>
+                       <Cursor fx:constant="HAND" />
+                   </cursor>
+               </Label>
+           </graphic>
+       </Button>
+   </children>
+</AnchorPane>

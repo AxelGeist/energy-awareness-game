@@ -1,0 +1,28 @@
+{
+    "activities": [
+        {
+            "title": "test 1",
+            "consumption_in_wh": 1000,
+            "source": "https://google.com",
+            "image_path": "51/dishwasher.png"
+        },
+        {
+            "title": "test 2",
+            "consumption_in_wh": 2000,
+            "source": "https://google.com",
+            "image_path": "51/dishwasher.png"
+        },
+        {
+            "title": "test 3",
+            "consumption_in_wh": 3000,
+            "source": "https://google.com",
+            "image_path": "51/dishwasher.png"
+        },
+        {
+            "title": "test 4",
+            "consumption_in_wh": 4000,
+            "source": "https://google.com",
+            "image_path": "51/dishwasher.png"
+        }
+    ]
+}
