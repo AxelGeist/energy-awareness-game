@@ -1,3 +1,20 @@
+## Game Preview
+
+
+![start_screen](https://user-images.githubusercontent.com/73136957/182700701-a2e1ea79-3c90-4d98-8345-214f2df365c6.png)
+
+![game](https://user-images.githubusercontent.com/73136957/182700880-21065d19-1f21-498b-8ff4-0a73a96e1a5a.png)
+
+![Leaderboard](https://user-images.githubusercontent.com/73136957/182703627-096adfe3-7604-4a51-8d8d-b9bdee671cba.png)
+
+
+
+
+
+
+
+
+
 ## Description of project
 This application is an energy related quiz game which is commissioned by the [OOPP team] from TU Delft. The back-end is written in `Java`, while the front-end uses `FXML`.
 The quiz has 6 different question types; All of them are unique, and you can earn points for answering them correctly. The app also has a build-in message system to send
